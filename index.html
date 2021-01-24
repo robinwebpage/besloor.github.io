@@ -18,7 +18,9 @@
                     div{
                         overflow-x: hidden;
                         overflow-y: hidden;
-
+                    }
+                    .col{
+                        color:white;
                     }
                 </style>
     </head>
@@ -41,8 +43,8 @@
             <nav class="navbar navbar-expand-lg navbar-light">
 
                 <a class="h3" href="#" style="color:white;">BESLOOR</a>
-                <button class="navbar-toggler" type="button" onclick="display()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span id="ispan" class="fa fa-bars"></span>
+                <button class="navbar-toggler" type="button" onclick="display()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span  class="fa fa-bars"  id="ispan" style="color:white;"></span>
                 </button>
                 <div class="collapse navbar-collapse ml-5" id="navbarNav">
                   <ul class="navbar-nav">
@@ -78,15 +80,15 @@
         </div>
         <div class="mt-5 container-fluid">
             <div class="row">
-                <div class="col-lg-3">
-                    <div data-aos="fade-down" data-aos-delay="200">
+                <div class="col-lg-3 mt-3">
+                    <div data-aos="fade-down" data-aos-delay="200" >
                          <div style="float:left;" ><i class="fa fa-eraser mr-3 hovereffect" aria-hidden="true" style=" font-size: 45px;"></i></div>
                          <div><a href="#" class="h5" style="text-decoration: none;">Vivamus Laoreet Orci Vel Massa Phasellus</a> 
                          <p class="mt-3">Tortor praesent et nulla maecenas eu nibh laoreet varius mauris lectus…</p>
                          <a href="#" class="mt-3" style="text-decoration: none;">View Details >></a></div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-3">
                     <div data-aos="fade-up" data-aos-delay="300">
                          <div style="float:left;"><i class="fa fa-scissors mr-3 hovereffect" aria-hidden="true" style=" font-size: 45px;"></i></div>
                          <div><a href="#" class="h5" style="text-decoration: none;">Vivamus Laoreet Orci Vel Massa Phasellus</a> 
@@ -94,7 +96,7 @@
                          <a href="#" class="mt-3" style="text-decoration: none;">View Details >></a></div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-3">
                     <div data-aos="fade-down" data-aos-delay="200">
                          <div style="float:left;"><i class="fa fa-heartbeat mr-3 hovereffect" aria-hidden="true" style=" font-size: 45px;"></i></div>
                          <div><a href="#" class="h5" style="text-decoration: none;">Vivamus Laoreet Orci Vel Massa Phasellus</a> 
@@ -102,7 +104,7 @@
                          <a href="#" class="mt-3" style="text-decoration: none;">View Details >></a></div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-3">
                     <div data-aos="fade-up" data-aos-delay="300">
                          <div style="float:left;"><i class="fa fa-rocket mr-3 hovereffect" aria-hidden="true" style=" font-size: 45px;"></i></div>
                          <div><a href="#" class="h5" style="text-decoration: none;">Vivamus Laoreet Orci Vel Massa Phasellus</a> 
@@ -208,11 +210,26 @@
             <div class="col-lg-4 mt-5" data-aos="fade-out-down" data-aos-delay="800">
                 <h3 class="font-weight-bolder">Subscribe</h3>
                 <input class="mt-3" type="text" style="border-radius: 25px; width:inherit; box-sizing: border-box; text-align: center;" placeholder="Enter your email here...">
-                <a href="#" style="text-decoration: none;"><p class="text-center pt-2 pb-2 mt-3 font-weight-bolder" style="width:inherit; background-color: red; color:white; border-radius: 25px;">SUBSCRIBE</p></a>
+                <a href="#" style="text-decoration: none;"><p class="text-center pt-2 pb-2 mt-3 font-weight-bolder" style="width:inherit; background-color:yellow; color:red; border-radius: 25px;">SUBSCRIBE</p></a>
                 <p>Get the latest special offers</p>
             </div>
         </div>
     </div>
-   
+    <script>
+        function display(){
+              var t=document.getElementById("ispan");
+              if(t.className=="fa fa-times")
+              {
+                  t.className="fa fa-bars";
+                  document.getElementById("navbarNav").style.display="none";
+                  
+              }
+              else{
+                  t.className="fa fa-times";
+                  document.getElementById("navbarNav").style.display="block";
+                  
+              }
+        }
+    </script>
     </body>
 </html>    
